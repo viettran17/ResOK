@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>I-rate Restaurant</title>
+    <link rel="shortcut icon" href="img/res.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+</head>
+
+<body>
+    <div data-role="page" id="homepage">
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <img src="img/res.png" style="max-width: 500px; width: 100%; height: auto;">
+            <br>
+            <br>
+            <br>
+            <p class="italic"> Rate for Restaurant here! </p>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand">I-Rate</a>
+        </nav>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a href="addrate.html" class="buttonrate"><button>Rate</button></a>
+        </nav>
+
+        <div class="container" style="margin-top:30px">
+            <div class="row">
+                <div class="col-sm-8">
+                    <ul data-role="listview" id="listrest" data-filter="true" data-filter-placeholder="Search Restaurant..." data-filter-theme="a" data-inset="true">
+                    </ul>
+                </div>
+                <div style="background-color: silver;" class="modal" id="detail" tabindex="-1" role="dialog">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/database.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
