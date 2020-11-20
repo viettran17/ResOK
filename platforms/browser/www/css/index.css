@@ -895,3 +895,17 @@ html {
     text-shadow: #9a9a9a 1px 1px;
     font-size: 30px;
   }
+
+  .fa_custom{
+    color: rgb(252, 252, 97);
+  }
+
+  .fa-usd{
+    color: green;
+  }
+
+  #DeleteRes{
+    color: red;
+    border-color: red;
+    float: right;
+  }
