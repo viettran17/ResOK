@@ -9,9 +9,11 @@ function home() {
                         <div class="card-body">
                             <a id="GetDetailsRes" rateId="${results[i].id}" data-toggle="modal" data-target="#detail">
                                 <img src = "${results[i].Restaurant_Image}" style="max-width: 500px; width: 100%; height: auto;">
-                                <h4 class="card-title">${results[i].Restaurant_Name}</h4>
+                                <h1 class="card-title">${results[i].Restaurant_Name}</h1>
                             </a>
-                            <p class="card-text">${results[i].Restaurant_Type}</p>
+                            <p class="card-text">Restaurant Type: ${results[i].Restaurant_Type}</p>
+                            <p>Average Rating: <span>${parseFloat((Number(results[i].Food_Rate) + Number(results[i].Clean_Rate) + Number(results[i].Service_Rate))/3).toFixed(1)}</span></p>
+                            <p class="card-text">Address: ${results[i].Restaurant_Address}</p>
                             <button id="DeleteRes" rateId="${results[i].id}" class="btn btn-outline-primary">Delete</button>
                         </div>
                     </div>
@@ -77,6 +79,7 @@ $(document).ready(function() {
                 <div class="modal-body">
                     <h4 class="card-title">${Restaurant_Detail.Restaurant_Name}</h4>
                     <p class="card-text">${Restaurant_Detail.Restaurant_Type}</p>
+                    <p>Average Rating: <span>${parseFloat((Number(results[i].rate_food) + Number(results[i].rate_clean) + Number(results[i].rate_service))/3).toFixed(1)}</span></p>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-secondary" data-dismiss="modal" href="#homepage">Close</button>

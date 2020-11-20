@@ -875,17 +875,19 @@ html {
   }
 
   .img-responsive{
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
   }
 
   /*Nav*/
   .buttonhome{
-    width: 180px;
+    width: 400px;
+    background-color: salmon;
   }
 
   .buttonrate{
-    width: 180px;
+    width: 400px;
+    background-color: aqua;
   }
   
   .italic{

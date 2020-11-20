@@ -1,8 +1,8 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "AKhoa",
-  "short_name": "AKhoa",
+  "name": "Restaurant Rate",
+  "short_name": "Restaurant Rate",
   "version": "com.phonegap.helloworld",
   "description": "Hello World sample application that responds to the deviceready event.",
   "author": "PhoneGap Team",
