@@ -27,22 +27,20 @@
             <a class="navbar-brand">I-Rate</a>
         </nav>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <a href="addrate.html" class="buttonrate"><button>Rate Restaurant</button></a>
+            <a href="" class="buttonrate"><button onclick="ring()">Ring a bell</button></a>
+            <a href="" class="buttonrate"><button onclick="vibrate()">Vibrate</button></a>
         </nav>
 
-        <div class="container" style="margin-top:30px">
-            <div class="row">
-                <div class="col-sm-8">
-                    <ul data-role="listview" id="listrest" data-filter="true" data-filter-placeholder="Search Restaurant..." data-filter-theme="a" data-inset="true">
-                    </ul>
-                </div>
-                <div style="background-color: silver;" class="modal" id="detail" tabindex="-1" role="dialog">
-                </div>
-            </div>
-        </div>
+        <script>
+            function ring() {
+                navigator.notification.beep(1);
+            }
+    
+            function vibrate() {
+                navigator.notification.vibrate(100);
+            }
+        </script>
     </div>
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
